@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+  
+  }
+  
+  :root {
+    --clr-gray: #a4a4a6;
+    --clr-darkGray: #2b322d;
+    --clr-green: #356554;
+    --clr-maroon: #510400;
+    --clr-dominosBlue: #0078ac;
+    --clr-dominosWhite: #ffffff;
+    --clr-dominosRed: #d2112c;
+  }
+  
+  .checked {
+    background-color: var(--clr-dominosRed);
+  }
+  
+  .danger {
+    color: var(--clr-dominosWhite);
+    position: relative;
+    top: 25%;
+  }
+  
+  .empty {
+    background-color: var(--clr-green);
+  }
+  
+  .grid div {
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--clr-gray);
+  }
+  
+  .bomb {
+    /* background-color: var(--clr-maroon); */
+    color: white;
+  }
+  
+  .grid {
+    background-color: var(--clr-dominosBlue);
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  body {
+    background-image: url("https://cdn.glitch.global/e889571b-a5fa-425a-82d0-5fed5f5928ea/2946064(1).jpg?v=1646974420569");
+    background-size: 800px;
+    background-repeat: no-repeat;
+    /* background-color: var(--clr-darkGray); */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    margin-top: -75px;
+  }
+  
+  .title {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 3rem;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .subtitle {
+    font-family: "Satisfy", cursive;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    font-family: Montserrat, sans;
+  }
+  
+  .footer {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .portfolio {
+    float: left;
+    width: 25%;
+    height: 150px;
+    text-align: center;
+    padding-top: 150px;
+  }
+  
+  .topLeft {
+    float: left;
+    width: auto;
+    height: 800px;
+  }
+  
+  .topCenter {
+    
+    width: auto;
+    height: 800px;
+    float: left;
+    padding-top:112px;
+  }
+  
+  .gameWrapper {
+    text-align: center;
+  }
+  
+  .topRight {
+    float: left;
+    width:auto;
+    height: 800px;
+  }
+  
+  .cheat {
+    background-color: var(--clr-maroon);
+  }
+  
+  #cheatButton, #bombAmountButton, #resetButton {
+    background-color: var(--clr-gray);
+    color: var(--clr-maroon);
+    text-decoration: none;
+    border-radius: .3rem;
+    padding: .3rem;
+  }

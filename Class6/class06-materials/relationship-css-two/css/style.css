@@ -1,0 +1,21 @@
+/* NO classes or IDs */
+
+/* Please make only "Just kidding!" yellow */
+body > section > h2{
+    color: yellow;
+}
+
+/* Please make only "twitter" red and 20px */
+body > aside > p > a{
+    color: red;
+    font-size: 20px;
+}
+/* Please make "Really hot" purple & "Like WILD hot" larger and blue  */
+body > article > h2{
+    font-size: 50px;
+    color: blue;
+}
+/* Please make only bob and pizza green */
+body > header > nav > ul + ul > li > a{
+    color: green;
+}

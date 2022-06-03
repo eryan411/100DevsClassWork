@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzasweeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:wght@900&family=Nunito:ital@1&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="topLeft"></div>
+    <div class="topCenter">
+      <section class="gameWrapper">
+        <h1 class="title">Pizza Sweeper</h1>
+        <br />
+        <h2 class="subtitle">By: The Pizza Weenies</h2>
+        <p>Left click uncovers tiles. Right-click sets flag.</p>
+<!--         <p class="instructions">"Go get Dominos. Don't get got!"</p> -->
+        <br /><br />
+        <div class="grid"></div>
+      </section>
+    </div>
+    <div class="topRight"></div>
+
+    <section class="footer">
+      <span class="portfolio"
+        >Ming Lee <a href="http://minglee.me"><i class="bx bxs-user-pin"></i></a
+      ></span>
+      <span class="portfolio"
+        >Dylan Ross<a href="https://worldofdr.netlify.app"
+          ><i class="bx bxs-dog"></i></a
+      ></span>
+      <span class="portfolio"
+        >J Bio <a href="http://www.dominos.com/"><i class="bx bxs-pizza"></i></a
+      ></span>
+      <span class="portfolio"
+        >A.J. Kraus III
+        <a href="https://twitter.com/AJKraus3rd"
+          ><i class="bx bxl-twitter"></i></a
+      ></span>
+    </section>
+    <div id="bombAmount">
+      <input class="bar" type="range" id="rangeinput" min="1" max="50" value="1" onchange="rangevalue.value=value"/>
+      <span class="highlight"></span>
+      <output id="rangevalue">1</output>
+      <a href="#" id="bombAmountButton">Bombs</a>
+    </div>
+    <input type="text" id="cheatCode" placeholder="cheat code">
+    <a href="#" id="cheatButton">CHEAT</a>
+
+    <a href="#" id="resetButton">Reset</a>
+  </body>
+</html>
