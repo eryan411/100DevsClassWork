@@ -48,7 +48,7 @@ const server = http.createServer((req, res) => {
           currentOccupation: "unknown"
         }
         res.end(JSON.stringify(objToJson));
-      }//student != leon
+      }
     }//student if
   }//else if
   else if (page == '/css/style.css'){
@@ -72,7 +72,7 @@ const server = http.createServer((req, res) => {
       res.write(data);
       res.end();
     });
-  }
+  };
 });
 
-server.listen(8000);
+server.listen(4000);
