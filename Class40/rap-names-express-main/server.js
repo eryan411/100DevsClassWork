@@ -21,10 +21,10 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 
-app.get('/',(request, response)=>{
+app.get('/',(req, res)=>{
     db.collection('rappers').find().sort({likes: -1}).toArray()
     .then(data => {
-        response.render('index.ejs', { info: data })
+        res.render('index.ejs', { info: data })
     })
     .catch(error => console.error(error))
 })
