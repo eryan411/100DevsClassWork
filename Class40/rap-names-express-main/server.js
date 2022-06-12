@@ -39,10 +39,10 @@ app.post('/addRapper', (req, res) => {
     .catch(error => console.error(error))
 })
 
-app.put('/addOneLike', (request, response) => {
-    db.collection('rappers').updateOne({stageName: request.body.stageNameS, birthName: request.body.birthNameS,likes: request.body.likesS},{
+app.put('/addOneLike', (req, res) => {
+    db.collection('rappers').updateOne({stageName: req.body.stageNameS, birthName: req.body.birthNameS,likes: req.body.likesS},{
         $set: {
-            likes:request.body.likesS + 1
+            likes:req.body.likesS + 1
           }
     },{
         sort: {_id: -1},
@@ -50,7 +50,7 @@ app.put('/addOneLike', (request, response) => {
     })
     .then(result => {
         console.log('Added One Like')
-        response.json('Like Added')
+        res.json('Like Added')
     })
     .catch(error => console.error(error))
 
