@@ -1,0 +1,25 @@
+#section1{
+    display: inline-block;
+    height: 125px;
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+#section2{
+    display: inline-block;
+    height: 250px;
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+#section3{
+    display: inline-block;
+    width: 40%;
+    height: 350px;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+}
+#section4{
+    display: inline-block;
+    width: 59%;
+    height: 350px;
+    border-bottom: 2px solid gray;
+}
