@@ -1,27 +1,29 @@
-#section1{
-    display: inline-block;
-    width: 100%;
+*{
+    box-sizing: border-box;
+}
+header, footer{
     height: 100px;
-    border-bottom: 2px solid gray;
+    border: 3px solid black;
+    clear: both;
 }
-#section2, #section3, #section4{
-    display: inline-block;
+section{
     height: 600px;
-    border-bottom: 2px solid gray;
-    border-right: 2px solid gray;
+    border: 3px solid black;
+    float: left;
 }
-#section2{
+
+#section1{
     width: 20%;
 }
-#section3{
+
+#section2{
     width: 40%;
 }
-#section4{
+
+#section3{
     width: 20%;
 }
-#section5{
-    display: inline-block;
-    width: 19%;
-    height: 600px;
-    border-bottom: 2px solid gray;
+
+#section4{
+    width: 20%;
 }
