@@ -1,0 +1,47 @@
+body{
+    background-color: skyblue; /* background color */
+    border: solid rgb(32, 223, 32) 5px; /* green border */
+    color: white; /* text color */
+    margin: 20px; /* length that border gets pushed from side of webpage */
+    padding: 20px; /* length between text and border */
+}
+
+section, footer{
+    clear: both; /* tells section and footer to get out of the way of floats */
+}
+
+img{
+    max-width: 200px;
+    float: right; /* pushes image to the right */
+}
+
+h1{
+    font-style: italic;
+}
+
+h2{
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer{
+    text-align: center; /* puts text at center of page */
+}
+
+ul{
+    list-style-type: none; /* gets rid of bullet points */
+}
+
+li{
+    display: inline-block;
+    font-weight: bold;
+    border-right: 2px gray solid;
+    padding-right: 2px;
+}
+li:last-of-type{
+    border-right: none;
+} /* removes the very last styling border between the list */
+
+li a {
+    color: rgb(40, 189, 40);
+} /* changes the color of the links */
