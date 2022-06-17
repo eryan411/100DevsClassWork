@@ -46,9 +46,35 @@ aside{
   width: 40%;
 }  */
 
+main{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 
 nav{
   padding: 30px;
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+aside > ul{
+  list-style: none;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+h2{
+  font-size: 35px;
 }
 
 /******************************************
@@ -65,8 +91,12 @@ nav{
   text-decoration: none;
 }
 
-.nav-list > ul > li > a{
+.nav-list > ul > li > a, #login{
   text-decoration: none;
   color: rgb(105, 101, 101);
   font-size: 25px;
+}
+
+#TCPlus{
+  width: 50px;
 }
