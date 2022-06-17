@@ -3,6 +3,12 @@
   box-sizing: border-box;
 }
 
+.nav-list > ul > li{
+  list-style: none;
+  width: max-content;
+
+}
+
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
@@ -21,15 +27,15 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+body{
+  display: flex;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-nav,main,aside{
+/* nav,main,aside{
   float: left;
   width: 10%;
 }
@@ -38,9 +44,29 @@ main{
 }
 aside{
   width: 40%;
-} 
+}  */
 
+
+nav{
+  padding: 30px;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+#logo{
+  width: 60px;
+}
+
+#joinTC{
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5c918;
+  text-decoration: none;
+}
+
+.nav-list > ul > li > a{
+  text-decoration: none;
+  color: rgb(105, 101, 101);
+  font-size: 25px;
+}
