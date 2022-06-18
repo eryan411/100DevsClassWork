@@ -3,19 +3,6 @@
   box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
 
 /******************************************
 /* BASE STYLES
@@ -26,20 +13,45 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+header nav, main{
+  display: flex;
+}
+
 header nav > *{
-  float: left;
+  justify-content: center;
+  text-decoration: none;
+}
+
+header nav{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+main section img{
+  margin-left: 40%;
+}
+
+header nav ul{
+  display: flex;
+}
+
+header nav ul li a{
+  text-decoration: none;
+}
+
+header nav > *{
   width: 10%;
   margin: 0 5%;
   list-style: none;
 }
 header nav li{
-  float: left;
+  justify-content: center;
   width: 33%;
 }
 main > section{
   width: 50%;
   height: 600px;
-  float: left;
 }
 img{
   width:50%;
@@ -47,6 +59,20 @@ img{
 main > section h1, main > section img{
   margin-top: 200px;
 }  
+
+main section h1{
+  font-size: 60px;
+  flex-wrap: wrap;
+}
+
+main section a {
+  border: blue;
+  background: blue;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
