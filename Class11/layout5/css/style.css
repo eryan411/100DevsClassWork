@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav button{
+    width: 100px;
+}
+
+nav button, #mainSection div form button{
+    background-color: darkblue;
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+    color: navy;
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 7px;
+}
+
+nav ul li a{
+    color: rgb(63, 63, 63);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+main, #secondSection{
+    padding-top: 20px;
+    padding-left: 100px;
+    background-color: aliceblue;
+}
+
+#mainSection{
+    display: flex;
+    padding-bottom: 100px;
+}
+
+#mainSection div{
+    width: 50%;
+}
+
+#secondSection{
+    display: flex;
+    gap: 20px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+}
+
+.secondary a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+#thirdSection{
+    padding-top: 100px;
+    background-color: white;
+    margin-left: 0;
+}
+
+@media (max-width: 600px) {
+    main{
+        padding-left: 0;
+    }
+
+    nav ul, nav button{
+        display: none;
+    }
+
+    nav{
+        justify-content: center;
+        background-color: rgb(241, 239, 235);
+        padding-bottom: 10px;
+    }
+
+    #mainSection{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    main section div form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main section div form input + button{
+        width: 100%;
+        align-items: center;   
+    }
+    
+    #secondSection{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+    }
+
+    p{
+        font-size: 1.25rem;
+    }
+}
