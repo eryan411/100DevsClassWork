@@ -110,6 +110,31 @@ section div button{
     box-shadow: none;
 }
 
+#secondSection{
+    padding-top: 400px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#thirdSection{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    text-align: center;
+}
+
+#thirdSection div{
+    width: 40%;
+    padding-left: 0;
+}
+
+@media (min-width: 1900px) {
+    #secondSection{
+        padding-top: 800px;
+    }
+}
+
 @media (max-width: 560px) {
     h1, h2, h3, p{
         color: white;
@@ -136,5 +161,14 @@ section div button{
     section div button{
         width: 260px;
         height: 50px;
+    }
+    #secondSection, #thirdSection{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    #secondSection{
+        padding-top: 700px;
     }
 }
