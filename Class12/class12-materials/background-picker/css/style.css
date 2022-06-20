@@ -30,16 +30,21 @@ li{
   width: 94px;
   height: 65px;
 }
+div{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-#purple{
+.purple{
   background: rgba(241,63,247,1);
 }
-#green{
+.green{
   background: rgba(0,253,81,1);
 }
-#blue{
+.blue{
   background: rgba(0,254,255);
 }

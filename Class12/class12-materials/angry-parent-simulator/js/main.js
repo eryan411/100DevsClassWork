@@ -10,7 +10,14 @@ function run(){
 
   randNum = Math.floor(Math.random() * 6)
   
+  
 
   document.querySelector('#placeToYell').innerText = `${firstName} ${firstMid} ${lastMid} ${lastName}`
   document.querySelector('#whatYouDidWrong').innerText = trouble[randNum]
+
+  if(!firstName && !firstMid && !lastMid && !lastName){
+    console.log('nothing was entered')
+    document.querySelector('#placeToYell').innerText = `DON\'T ACT LIKE YOU CAN\'T HEAR ME`
+    document.querySelector('#whatYouDidWrong').innerText = ''
+  }
 }

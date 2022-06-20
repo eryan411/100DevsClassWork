@@ -1,6 +1,11 @@
-document.getElementById('purple').onclick = partyPurple
-document.getElementById('green').onclick = partyGreen
-document.getElementById('blue').onclick = partyBlue
+document.getElementById('purplebg').onclick = partyPurple
+document.getElementById('greenbg').onclick = partyGreen
+document.getElementById('bluebg').onclick = partyBlue
+document.getElementById('purplechair').onclick = purpleChair
+document.getElementById('greenchair').onclick = greenChair
+document.getElementById('bluechair').onclick = blueChair
+document.getElementById('clear').onclick = clear
+
 
 
 function partyPurple() {
@@ -16,4 +21,22 @@ function partyGreen() {
 function partyBlue() {
   document.querySelector('body').style.backgroundColor = 'rgba(0,254,255)'
   document.querySelector('body').style.color = 'white'
+}
+
+function purpleChair(){
+  document.querySelector('img').src = 'img/pinkgamingchair.png'
+}
+
+function greenChair(){
+  document.querySelector('img').src = 'img/chair.png'
+}
+
+function blueChair(){
+  document.querySelector('img').src = 'img/tealchair.png'
+}
+
+function clear(){
+  document.querySelector('body').style.backgroundColor = 'white'
+  document.querySelector('body').style.color = 'black'
+  document.querySelector('img').src = 'img/chair.png'
 }
