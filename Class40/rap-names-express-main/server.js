@@ -32,7 +32,7 @@ app.get('/',(req, res)=>{
 app.post('/addRapper', (req, res) => {
     db.collection('rappers').insertOne({stageName: req.body.stageName,
     birthName: req.body.birthName, likes: 0})
-    .then(result => {
+    .then(res => {
         console.log('Rapper Added')
         res.redirect('/')
     })
@@ -48,7 +48,7 @@ app.put('/addOneLike', (req, res) => {
         sort: {_id: -1},
         upsert: true
     })
-    .then(result => {
+    .then(res => {
         console.log('Added One Like')
         res.json('Like Added')
     })
@@ -56,11 +56,11 @@ app.put('/addOneLike', (req, res) => {
 
 })
 
-app.delete('/deleteRapper', (request, response) => {
-    db.collection('rappers').deleteOne({stageName: request.body.stageNameS})
-    .then(result => {
+app.delete('/deleteRapper', (req, res) => {
+    db.collection('rappers').deleteOne({stageName: req.body.stageNameS})
+    .then(res => {
         console.log('Rapper Deleted')
-        response.json('Rapper Deleted')
+        res.json('Rapper Deleted')
     })
     .catch(error => console.error(error))
 
