@@ -12,15 +12,26 @@ MongoClient.connect(connectionString, {
 }).then(client => {
     console.log('Connected to Database')
     const db = client.db('star-wars-quotes')
+    const quotesCollection = db.collection('quotes')
+    app.set('view engine', 'ejs')
     app.use(bodyParser.urlencoded({ extended: true }))
+    app.use(express.static('public'))
     app.listen(PORT, function(){
         console.log(`listening on ${PORT}`)
     })
-    app.get('/', function(req, res){
-        res.sendFile(__dirname + '/index.html')
+    app.get('/', (req, res) => {
+        db.collection('quotes').find().toArray()
+        .then(results => {
+            res.render('index.ejs', { quotes: results })
+        })
+        .catch(error => console.error(error))
     })
     app.post('/quotes', (req, res) => {
-        console.log(req.body)
+        quotesCollection.insertOne(req.body)
+        .then(result => {
+            res.redirect('/')
+        })
+        .catch(error => console.error(error))
     })
 })
 .catch(console.error)
