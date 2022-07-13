@@ -21,5 +21,7 @@ dog.fetch = function(){
 dog.barkAtDoor = function(){
     if (dog.isYappy == true){
         alert('THERE\'S SOMEBODY AT THE DOOR')
+    } else {
+        alert('Yawn')
     }
 }
