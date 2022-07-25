@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e94f37;
+    color: #373e41
+}
+
+body{
+    padding-inline: 5%;
+}
+
+.flex{
+    display: flex;
+}
+
+.white-background{
+    background-color: #f6f7eb;
+    border-radius: 5px;
+}
+
+.intro{
+    margin-top: 10px;
+    padding-left: 2%;
+}
+
+.intro, .input-containers, .quotes-container{
+    min-width: 511px;
+}
+
+.intro > h1{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.input-containers{
+    gap: 20px;
+}
+
+.input-block{
+    margin-top: 10px;
+    padding: 2%;
+    width: 33%;
+}
+
+.input-block > h2{
+    margin-top: 0;
+}
+
+.add-quote-form, .add-quote-block{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quote-input{
+    margin-top: 5px;
+    width: 45%;
+}
+
+.quotes-container{
+    height: 60vh;
+}
+
+.quotes-intro{
+    padding: 2%;
+}

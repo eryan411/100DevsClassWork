@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Quote App</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="intro white-background">
+        <h1>May Node and Express be with you!</h1>
+    </div>
+    <div class="flex input-containers">
+        <div class="white-background input-block flex add-quote-block">
+            <h2>Add quote</h2>
+            <form class="flex add-quote-form" action="/quotes" method="POST">
+                <div>
+                    <input class="quote-input" type="text" name="name" placeholder="Name">
+                    <input class="quote-input" type="text" name="quote" placeholder="Quote">
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="white-background input-block">
+            <h2>Darth Vader Invades!</h2>
+            <p>Replace Yoda's first quote with a quote written by Darth Vader</p>
+            <button id="update-button">Replace Yoda's Quote</button>
+        </div>
+        <div class="white-background input-block">
+            <h2>Remove Darth Vader!</h2>
+            <p>Delete one of Darth Vader's quotes. Does nothing if there are no more Darth Vader quotes left.</p>
+            <button id="delete-button">Delete Darth Vader's quote</button>
+            <div id="message"></div>
+        </div>
+    </div>
+    <div class="white-background quotes-container">
+        <h2 class="quotes-intro">Quotes</h2>
+        <ul class="quotes">
+            <% for(var i = 0; i < quotes.length; i++){%>
+                <li class="quote test">
+                    <span><%= quotes[i].name %>: </span>
+                    <span><%= quotes[i].quote %></span>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
